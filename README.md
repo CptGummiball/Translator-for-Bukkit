@@ -1,6 +1,6 @@
 # Readme
 
-The `Translator` class is a lightweight utility for handling language translations in Bukkit/Spigot plugins. It allows developers to easily manage and retrieve translated messages from YAML configuration files based on the player's selected language.
+The `Translator` class is a lightweight utility for handling language translations in Bukkit/Spigot plugins. It allows developers to easily manage and retrieve translated messages from YAML files.
 
 ## Usage
 
@@ -23,7 +23,7 @@ This method loads language configurations from YAML files located in the "transl
 ``` 
 String translatedMessage = translator.translate("example.key");` 
 ```
-This method looks for the specified key in the language configuration corresponding to the player's chosen language. If the key is not found, it defaults to English ("en") and replaces color codes.
+This method looks for the specified key in the language configuration corresponding to the chosen language in the config.yml. If the key is not found, it defaults to English ("en").
     
 
 ## Example
@@ -60,5 +60,6 @@ To add or modify translations, create YAML files for each language in the "trans
 
 -   The default language is set in the plugin's configuration file.
 -   Ensure that translation files follow the YAML format and are placed in the "translations" directory within your resources.
+-   You can use Color Codes with `&`. For Example `&a` is green. [Minecraft-Color-Codes](https://htmlcolorcodes.com/minecraft-color-codes/)
 
 Feel free to customize this class according to your plugin's requirements. Happy coding!
