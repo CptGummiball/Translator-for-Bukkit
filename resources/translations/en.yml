@@ -1,0 +1,4 @@
+example:
+  key: "This is an example message"
+welcome:
+  message: "&aWelcome, %player%! &7Enjoy your stay."
